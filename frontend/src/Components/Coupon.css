@@ -1,0 +1,44 @@
+.coupon-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of elements to the next row */
+    justify-content: space-between; /* Ensures even spacing between coupons */
+    gap: 20px; /* Adds space between coupons */
+  }
+  
+  .coupon {
+    flex: 1 1 calc(33.33% - 20px); /* Ensures 3 coupons per row */
+    max-width: 200px; /* Prevents coupons from growing beyond 1/3rd of the row */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 200px;
+    height: 250px; /* Fixed height for uniformity */
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  .coupon h3 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .coupon p {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  select.form-control {
+    width: 300px; /* Fixed width */
+  }
+  
+  input.form-control {
+    width: 300px; /* Fixed width */
+  }
+  
